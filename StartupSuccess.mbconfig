@@ -1,0 +1,553 @@
+﻿{
+  "TrainingTime": 600,
+  "Scenario": "Regression",
+  "DataSource": {
+    "Type": "TabularFile",
+    "Version": 1,
+    "FilePath": "C:\\Users\\Varun Viswapriyan\\Downloads\\SS-#3.csv",
+    "Delimiter": ",",
+    "DecimalMarker": ".",
+    "HasHeader": true,
+    "ColumnProperties": [
+      {
+        "ColumnName": "Dependent-Company Status",
+        "ColumnPurpose": "Label",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 2
+      },
+      {
+        "ColumnName": "year of founding",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 2
+      },
+      {
+        "ColumnName": "Number of Investors in Seed",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 2
+      },
+      {
+        "ColumnName": "Number of Co-founders",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 2
+      },
+      {
+        "ColumnName": "Number of of advisors",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 2
+      },
+      {
+        "ColumnName": "Team size all employees",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 2
+      },
+      {
+        "ColumnName": "Number of of repeat investors",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 2
+      },
+      {
+        "ColumnName": "Worked in top companies",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Boolean",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 2
+      },
+      {
+        "ColumnName": "Average size of companies worked for in the past",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "String",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 2
+      },
+      {
+        "ColumnName": "Have been part of successful startups in the past?",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Boolean",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 2
+      },
+      {
+        "ColumnName": "Consulting experience?",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Boolean",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 2
+      },
+      {
+        "ColumnName": "Product or service company?",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "String",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 2
+      },
+      {
+        "ColumnName": "Focus on private or public data?",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "String",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 2
+      },
+      {
+        "ColumnName": "Focus on consumer data?",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Boolean",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 2
+      },
+      {
+        "ColumnName": "Focus on structured or unstructured data",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "String",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 2
+      },
+      {
+        "ColumnName": "Subscription based business",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Boolean",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 2
+      },
+      {
+        "ColumnName": "Cloud or platform based serive/product?",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "String",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 2
+      },
+      {
+        "ColumnName": "Local or global player",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "String",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 2
+      },
+      {
+        "ColumnName": "Linear or Non-linear business model",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "String",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 2
+      },
+      {
+        "ColumnName": "Capital intensive business e.g. e-commerce, Engineering products and operations can also cause a business to be capital intensive",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Boolean",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 2
+      },
+      {
+        "ColumnName": "Crowdsourcing based business",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Boolean",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 2
+      },
+      {
+        "ColumnName": "Crowdfunding based business",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "String",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 2
+      },
+      {
+        "ColumnName": "Machine Learning based business",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Boolean",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 2
+      },
+      {
+        "ColumnName": "Predictive Analytics business",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Boolean",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 2
+      },
+      {
+        "ColumnName": "Speech analytics business",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Boolean",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 2
+      },
+      {
+        "ColumnName": "Prescriptive analytics business",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Boolean",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 2
+      },
+      {
+        "ColumnName": "Big Data Business",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Boolean",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 2
+      },
+      {
+        "ColumnName": "Cross-Channel Analytics/ marketing channels",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Boolean",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 2
+      },
+      {
+        "ColumnName": "Online or offline venture - physical location based business or online venture?",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "String",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 2
+      },
+      {
+        "ColumnName": "Highest education",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "String",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 2
+      },
+      {
+        "ColumnName": "Experience in selling and building products",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "String",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 2
+      },
+      {
+        "ColumnName": "Dificulty of Obtaining Work force",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "String",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 2
+      },
+      {
+        "ColumnName": "Time to market service or product",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "String",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 2
+      },
+      {
+        "ColumnName": "Barriers of entry for the competitors",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Boolean",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 2
+      },
+      {
+        "ColumnName": "Number of Direct competitors",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 2
+      },
+      {
+        "ColumnName": "Last round of funding received (in milionUSD)",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "String",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 2
+      },
+      {
+        "ColumnName": "Time to 1st investment (in months)",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 2
+      },
+      {
+        "ColumnName": "Avg time to investment - average across all rounds, measured from previous investment",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 2
+      },
+      {
+        "ColumnName": "Gartner hype cycle stage",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "String",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 2
+      }
+    ]
+  },
+  "Environment": {
+    "Type": "LocalCPU",
+    "Version": 1
+  },
+  "RunHistory": {
+    "Version": 1,
+    "Type": "Result",
+    "Trials": [
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "FastForestRegression",
+        "Score": "NaN",
+        "RuntimeInSeconds": 14.008000373840332
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "FastTreeTweedieRegression",
+        "Score": "NaN",
+        "RuntimeInSeconds": 9.8120002746582031
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "FastTreeRegression",
+        "Score": "NaN",
+        "RuntimeInSeconds": 8.77400016784668
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "SdcaRegression",
+        "Score": "NaN",
+        "RuntimeInSeconds": 17.2189998626709
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "LightGbmRegression",
+        "Score": "NaN",
+        "RuntimeInSeconds": 9.175999641418457
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "FastTreeRegression",
+        "Score": "NaN",
+        "RuntimeInSeconds": 8.2299995422363281
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "LbfgsPoissonRegressionRegression",
+        "Score": "NaN",
+        "RuntimeInSeconds": 8.42300033569336
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "FastTreeTweedieRegression",
+        "Score": "NaN",
+        "RuntimeInSeconds": 9.560999870300293
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "SdcaRegression",
+        "Score": "NaN",
+        "RuntimeInSeconds": 10.866000175476074
+      }
+    ],
+    "Pipeline": {
+      "parameter": {
+        "0": {
+          "OutputColumnNames": [
+            "Worked in top companies",
+            "Average size of companies worked for in the past",
+            "Have been part of successful startups in the past?",
+            "Consulting experience?",
+            "Product or service company?",
+            "Focus on private or public data?",
+            "Focus on consumer data?",
+            "Focus on structured or unstructured data",
+            "Subscription based business",
+            "Cloud or platform based serive/product?",
+            "Local or global player",
+            "Linear or Non-linear business model",
+            "Capital intensive business e.g. e-commerce, Engineering products and operations can also cause a business to be capital intensive",
+            "Crowdsourcing based business",
+            "Crowdfunding based business",
+            "Machine Learning based business",
+            "Predictive Analytics business",
+            "Speech analytics business",
+            "Prescriptive analytics business",
+            "Big Data Business",
+            "Cross-Channel Analytics/ marketing channels",
+            "Online or offline venture - physical location based business or online venture?",
+            "Highest education",
+            "Experience in selling and building products",
+            "Dificulty of Obtaining Work force",
+            "Time to market service or product",
+            "Barriers of entry for the competitors",
+            "Gartner hype cycle stage"
+          ],
+          "InputColumnNames": [
+            "Worked in top companies",
+            "Average size of companies worked for in the past",
+            "Have been part of successful startups in the past?",
+            "Consulting experience?",
+            "Product or service company?",
+            "Focus on private or public data?",
+            "Focus on consumer data?",
+            "Focus on structured or unstructured data",
+            "Subscription based business",
+            "Cloud or platform based serive/product?",
+            "Local or global player",
+            "Linear or Non-linear business model",
+            "Capital intensive business e.g. e-commerce, Engineering products and operations can also cause a business to be capital intensive",
+            "Crowdsourcing based business",
+            "Crowdfunding based business",
+            "Machine Learning based business",
+            "Predictive Analytics business",
+            "Speech analytics business",
+            "Prescriptive analytics business",
+            "Big Data Business",
+            "Cross-Channel Analytics/ marketing channels",
+            "Online or offline venture - physical location based business or online venture?",
+            "Highest education",
+            "Experience in selling and building products",
+            "Dificulty of Obtaining Work force",
+            "Time to market service or product",
+            "Barriers of entry for the competitors",
+            "Gartner hype cycle stage"
+          ]
+        },
+        "1": {
+          "OutputColumnNames": [
+            "year of founding",
+            "Number of Investors in Seed",
+            "Number of Co-founders",
+            "Number of of advisors",
+            "Team size all employees",
+            "Number of of repeat investors",
+            "Number of Direct competitors",
+            "Time to 1st investment (in months)",
+            "Avg time to investment - average across all rounds, measured from previous investment"
+          ],
+          "InputColumnNames": [
+            "year of founding",
+            "Number of Investors in Seed",
+            "Number of Co-founders",
+            "Number of of advisors",
+            "Team size all employees",
+            "Number of of repeat investors",
+            "Number of Direct competitors",
+            "Time to 1st investment (in months)",
+            "Avg time to investment - average across all rounds, measured from previous investment"
+          ]
+        },
+        "2": {
+          "InputColumnName": "Last round of funding received (in milionUSD)",
+          "OutputColumnName": "Last round of funding received (in milionUSD)"
+        },
+        "3": {
+          "InputColumnNames": [
+            "Worked in top companies",
+            "Average size of companies worked for in the past",
+            "Have been part of successful startups in the past?",
+            "Consulting experience?",
+            "Product or service company?",
+            "Focus on private or public data?",
+            "Focus on consumer data?",
+            "Focus on structured or unstructured data",
+            "Subscription based business",
+            "Cloud or platform based serive/product?",
+            "Local or global player",
+            "Linear or Non-linear business model",
+            "Capital intensive business e.g. e-commerce, Engineering products and operations can also cause a business to be capital intensive",
+            "Crowdsourcing based business",
+            "Crowdfunding based business",
+            "Machine Learning based business",
+            "Predictive Analytics business",
+            "Speech analytics business",
+            "Prescriptive analytics business",
+            "Big Data Business",
+            "Cross-Channel Analytics/ marketing channels",
+            "Online or offline venture - physical location based business or online venture?",
+            "Highest education",
+            "Experience in selling and building products",
+            "Dificulty of Obtaining Work force",
+            "Time to market service or product",
+            "Barriers of entry for the competitors",
+            "Gartner hype cycle stage",
+            "year of founding",
+            "Number of Investors in Seed",
+            "Number of Co-founders",
+            "Number of of advisors",
+            "Team size all employees",
+            "Number of of repeat investors",
+            "Number of Direct competitors",
+            "Time to 1st investment (in months)",
+            "Avg time to investment - average across all rounds, measured from previous investment",
+            "Last round of funding received (in milionUSD)"
+          ],
+          "OutputColumnName": "Features"
+        },
+        "4": {
+          "NumberOfTrees": 4,
+          "NumberOfLeaves": 4,
+          "FeatureFraction": 1.0,
+          "LabelColumnName": "Dependent-Company Status",
+          "FeatureColumnName": "Features"
+        }
+      },
+      "estimators": [
+        "OneHotEncoding",
+        "ReplaceMissingValues",
+        "FeaturizeText",
+        "Concatenate",
+        "FastForestRegression"
+      ]
+    },
+    "MetricName": "RSquared"
+  },
+  "Type": "TrainingConfig",
+  "Version": 2
+}

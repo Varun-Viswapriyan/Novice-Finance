@@ -1,0 +1,60 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.ML" Version="1.7.1" />
+    <PackageReference Include="Microsoft.ML.FastTree" Version="1.7.1" />
+    <PackageReference Include="Microsoft.ML.LightGbm" Version="1.7.1" />
+  </ItemGroup>
+  <ItemGroup Label="CustomerChurnML">
+    <None Include="CustomerChurnML.consumption.cs">
+      <DependentUpon>CustomerChurnML.mbconfig</DependentUpon>
+    </None>
+    <None Include="CustomerChurnML.training.cs">
+      <DependentUpon>CustomerChurnML.mbconfig</DependentUpon>
+    </None>
+    <None Include="CustomerChurnML.zip">
+      <DependentUpon>CustomerChurnML.mbconfig</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup Label="DefaultML">
+    <None Include="DefaultML.consumption.cs">
+      <DependentUpon>DefaultML.mbconfig</DependentUpon>
+    </None>
+    <None Include="DefaultML.training.cs">
+      <DependentUpon>DefaultML.mbconfig</DependentUpon>
+    </None>
+    <None Include="DefaultML.zip">
+      <DependentUpon>DefaultML.mbconfig</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup Label="LoanApprovalML">
+    <None Include="LoanApprovalML.consumption.cs">
+      <DependentUpon>LoanApprovalML.mbconfig</DependentUpon>
+    </None>
+    <None Include="LoanApprovalML.training.cs">
+      <DependentUpon>LoanApprovalML.mbconfig</DependentUpon>
+    </None>
+    <None Include="LoanApprovalML.zip">
+      <DependentUpon>LoanApprovalML.mbconfig</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup Label="StartupSuccess">
+    <None Include="StartupSuccess.consumption.cs">
+      <DependentUpon>StartupSuccess.mbconfig</DependentUpon>
+    </None>
+    <None Include="StartupSuccess.training.cs">
+      <DependentUpon>StartupSuccess.mbconfig</DependentUpon>
+    </None>
+    <None Include="StartupSuccess.zip">
+      <DependentUpon>StartupSuccess.mbconfig</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+</Project>

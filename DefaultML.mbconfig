@@ -1,0 +1,672 @@
+﻿{
+  "TrainingTime": 610,
+  "Scenario": "Regression",
+  "DataSource": {
+    "Type": "TabularFile",
+    "Version": 1,
+    "FilePath": "C:\\Users\\Varun Viswapriyan\\Downloads\\Default-Data.csv",
+    "Delimiter": ",",
+    "DecimalMarker": ".",
+    "HasHeader": true,
+    "ColumnProperties": [
+      {
+        "ColumnName": "LIMIT_BAL",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 2
+      },
+      {
+        "ColumnName": "SEX",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "String",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 2
+      },
+      {
+        "ColumnName": "EDUCATION",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "String",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 2
+      },
+      {
+        "ColumnName": "MARRIAGE",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "String",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 2
+      },
+      {
+        "ColumnName": "AGE",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 2
+      },
+      {
+        "ColumnName": "PAY_0",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 2
+      },
+      {
+        "ColumnName": "PAY_2",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 2
+      },
+      {
+        "ColumnName": "PAY_3",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 2
+      },
+      {
+        "ColumnName": "PAY_4",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 2
+      },
+      {
+        "ColumnName": "PAY_5",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 2
+      },
+      {
+        "ColumnName": "PAY_6",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 2
+      },
+      {
+        "ColumnName": "BILL_AMT1",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 2
+      },
+      {
+        "ColumnName": "BILL_AMT2",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 2
+      },
+      {
+        "ColumnName": "BILL_AMT3",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 2
+      },
+      {
+        "ColumnName": "BILL_AMT4",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 2
+      },
+      {
+        "ColumnName": "BILL_AMT5",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 2
+      },
+      {
+        "ColumnName": "BILL_AMT6",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 2
+      },
+      {
+        "ColumnName": "PAY_AMT1",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 2
+      },
+      {
+        "ColumnName": "PAY_AMT2",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 2
+      },
+      {
+        "ColumnName": "PAY_AMT3",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 2
+      },
+      {
+        "ColumnName": "PAY_AMT4",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 2
+      },
+      {
+        "ColumnName": "PAY_AMT5",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 2
+      },
+      {
+        "ColumnName": "PAY_AMT6",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 2
+      },
+      {
+        "ColumnName": "default.payment.next.month",
+        "ColumnPurpose": "Label",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 2
+      }
+    ]
+  },
+  "Environment": {
+    "Type": "LocalCPU",
+    "Version": 1
+  },
+  "RunHistory": {
+    "Version": 1,
+    "Type": "Result",
+    "Trials": [
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "FastForestRegression",
+        "Score": 0.15601412978708806,
+        "RuntimeInSeconds": 5.6539998054504395
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.14456266154273345,
+        "RuntimeInSeconds": 3.88700008392334
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "FastTreeRegression",
+        "Score": -0.024292947023525135,
+        "RuntimeInSeconds": 1.753000020980835
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "FastTreeTweedieRegression",
+        "Score": -0.553983980251753,
+        "RuntimeInSeconds": 1.5820000171661377
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "SdcaRegression",
+        "Score": -0.0010551485005620975,
+        "RuntimeInSeconds": 1.86899995803833
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "LbfgsPoissonRegressionRegression",
+        "Score": 0.0707280165278733,
+        "RuntimeInSeconds": 2.5529999732971191
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "FastForestRegression",
+        "Score": 0.15318522054532901,
+        "RuntimeInSeconds": 1.5329999923706055
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "FastTreeRegression",
+        "Score": -0.19815997952230857,
+        "RuntimeInSeconds": 1.4850000143051147
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.14456630426145856,
+        "RuntimeInSeconds": 0.88499999046325684
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "FastTreeTweedieRegression",
+        "Score": 0.10172821691475076,
+        "RuntimeInSeconds": 1.8250000476837158
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "SdcaRegression",
+        "Score": 0.053424245816815041,
+        "RuntimeInSeconds": 1.8090000152587891
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "FastForestRegression",
+        "Score": 0.15723906927741227,
+        "RuntimeInSeconds": 1.5729999542236328
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "LbfgsPoissonRegressionRegression",
+        "Score": 0.071076591059040628,
+        "RuntimeInSeconds": 1.6799999475479126
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "FastTreeRegression",
+        "Score": 0.15618527896354217,
+        "RuntimeInSeconds": 1.2269999980926514
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.03908656317213155,
+        "RuntimeInSeconds": 0.94499999284744263
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "FastTreeTweedieRegression",
+        "Score": -2.8948895773968117,
+        "RuntimeInSeconds": 1.496999979019165
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "SdcaRegression",
+        "Score": -0.078335838198257957,
+        "RuntimeInSeconds": 1.2829999923706055
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "FastForestRegression",
+        "Score": 0.15802585493980281,
+        "RuntimeInSeconds": 1.5549999475479126
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "LbfgsPoissonRegressionRegression",
+        "Score": 0.073879602544420164,
+        "RuntimeInSeconds": 2.0179998874664307
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "FastTreeRegression",
+        "Score": 0.15372120098612085,
+        "RuntimeInSeconds": 1.2790000438690186
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "SdcaRegression",
+        "Score": 0.087886167781793811,
+        "RuntimeInSeconds": 1.3400000333786011
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.14488782180276416,
+        "RuntimeInSeconds": 0.82999998331069946
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "FastTreeTweedieRegression",
+        "Score": -0.095650424708845438,
+        "RuntimeInSeconds": 1.6640000343322754
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "FastForestRegression",
+        "Score": 0.15612943608964458,
+        "RuntimeInSeconds": 1.218000054359436
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "LbfgsPoissonRegressionRegression",
+        "Score": 0.072948928890547271,
+        "RuntimeInSeconds": 1.3630000352859497
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "FastTreeRegression",
+        "Score": -0.25172121380812573,
+        "RuntimeInSeconds": 1.4359999895095825
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "FastForestRegression",
+        "Score": 0.15538268807160727,
+        "RuntimeInSeconds": 1.5399999618530273
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.0025234926498486354,
+        "RuntimeInSeconds": 1.2589999437332153
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "FastTreeTweedieRegression",
+        "Score": -0.90291279620400289,
+        "RuntimeInSeconds": 2.5409998893737793
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "LbfgsPoissonRegressionRegression",
+        "Score": -7.6718567945111E-05,
+        "RuntimeInSeconds": 1.5870000123977661
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "SdcaRegression",
+        "Score": -0.11253844503114396,
+        "RuntimeInSeconds": 4.3959999084472656
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "FastTreeRegression",
+        "Score": 0.16078625736033103,
+        "RuntimeInSeconds": 1.1289999485015869
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "FastForestRegression",
+        "Score": 0.16101307142813825,
+        "RuntimeInSeconds": 1.9550000429153442
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "FastTreeTweedieRegression",
+        "Score": 0.10180074563913544,
+        "RuntimeInSeconds": 1.1629999876022339
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.13944292884850507,
+        "RuntimeInSeconds": 0.80400002002716064
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "LbfgsPoissonRegressionRegression",
+        "Score": 0.015046584213965986,
+        "RuntimeInSeconds": 0.55900001525878906
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "FastTreeRegression",
+        "Score": 0.155066132803666,
+        "RuntimeInSeconds": 0.90100002288818359
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "FastForestRegression",
+        "Score": 0.15601412978708806,
+        "RuntimeInSeconds": 1.3830000162124634
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "FastTreeTweedieRegression",
+        "Score": -47.49397787747764,
+        "RuntimeInSeconds": 6.8289999961853027
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.15209912830401018,
+        "RuntimeInSeconds": 1.0290000438690186
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "SdcaRegression",
+        "Score": -0.00022735248719607526,
+        "RuntimeInSeconds": 2.2369999885559082
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "LbfgsPoissonRegressionRegression",
+        "Score": 0.070860157559729187,
+        "RuntimeInSeconds": 3.4119999408721924
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "FastTreeRegression",
+        "Score": -0.11912360177301329,
+        "RuntimeInSeconds": 1.6710000038146973
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "FastTreeTweedieRegression",
+        "Score": 0.15265096916586041,
+        "RuntimeInSeconds": 1.8200000524520874
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "FastForestRegression",
+        "Score": 0.160649825556482,
+        "RuntimeInSeconds": 266.56600952148438
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "SdcaRegression",
+        "Score": -0.00014709704214554975,
+        "RuntimeInSeconds": 0.88400000333786011
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.13755461563045668,
+        "RuntimeInSeconds": 0.89300000667572021
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "FastTreeRegression",
+        "Score": -0.19987869372014133,
+        "RuntimeInSeconds": 1.7690000534057617
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "LbfgsPoissonRegressionRegression",
+        "Score": 0.021947820166585252,
+        "RuntimeInSeconds": 0.66100001335144043
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "FastTreeTweedieRegression",
+        "Score": 0.14255298229399993,
+        "RuntimeInSeconds": 4.2329998016357422
+      }
+    ],
+    "Pipeline": {
+      "parameter": {
+        "0": {
+          "OutputColumnNames": [
+            "SEX",
+            "EDUCATION",
+            "MARRIAGE"
+          ],
+          "InputColumnNames": [
+            "SEX",
+            "EDUCATION",
+            "MARRIAGE"
+          ]
+        },
+        "1": {
+          "OutputColumnNames": [
+            "LIMIT_BAL",
+            "AGE",
+            "PAY_0",
+            "PAY_2",
+            "PAY_3",
+            "PAY_4",
+            "PAY_5",
+            "PAY_6",
+            "BILL_AMT1",
+            "BILL_AMT2",
+            "BILL_AMT3",
+            "BILL_AMT4",
+            "BILL_AMT5",
+            "BILL_AMT6",
+            "PAY_AMT1",
+            "PAY_AMT2",
+            "PAY_AMT3",
+            "PAY_AMT4",
+            "PAY_AMT5",
+            "PAY_AMT6"
+          ],
+          "InputColumnNames": [
+            "LIMIT_BAL",
+            "AGE",
+            "PAY_0",
+            "PAY_2",
+            "PAY_3",
+            "PAY_4",
+            "PAY_5",
+            "PAY_6",
+            "BILL_AMT1",
+            "BILL_AMT2",
+            "BILL_AMT3",
+            "BILL_AMT4",
+            "BILL_AMT5",
+            "BILL_AMT6",
+            "PAY_AMT1",
+            "PAY_AMT2",
+            "PAY_AMT3",
+            "PAY_AMT4",
+            "PAY_AMT5",
+            "PAY_AMT6"
+          ]
+        },
+        "2": {
+          "InputColumnNames": [
+            "SEX",
+            "EDUCATION",
+            "MARRIAGE",
+            "LIMIT_BAL",
+            "AGE",
+            "PAY_0",
+            "PAY_2",
+            "PAY_3",
+            "PAY_4",
+            "PAY_5",
+            "PAY_6",
+            "BILL_AMT1",
+            "BILL_AMT2",
+            "BILL_AMT3",
+            "BILL_AMT4",
+            "BILL_AMT5",
+            "BILL_AMT6",
+            "PAY_AMT1",
+            "PAY_AMT2",
+            "PAY_AMT3",
+            "PAY_AMT4",
+            "PAY_AMT5",
+            "PAY_AMT6"
+          ],
+          "OutputColumnName": "Features"
+        },
+        "3": {
+          "NumberOfTrees": 70,
+          "NumberOfLeaves": 66,
+          "FeatureFraction": 0.898033,
+          "LabelColumnName": "default.payment.next.month",
+          "FeatureColumnName": "Features"
+        }
+      },
+      "estimators": [
+        "OneHotEncoding",
+        "ReplaceMissingValues",
+        "Concatenate",
+        "FastForestRegression"
+      ]
+    },
+    "MetricName": "RSquared"
+  },
+  "Type": "TrainingConfig",
+  "Version": 2
+}
