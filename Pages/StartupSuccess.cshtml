@@ -1,0 +1,329 @@
+﻿@page
+@model WebApplication4.Pages.StartupSuccessModel
+@{
+    ViewData["Title"] = "Startup Success";
+    var message = ViewData["message"];
+}   
+<!DOCTYPE html>
+<html style="font-size: 16px;" lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+
+    <title>Startup Success</title>
+
+
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="navbar">
+        <a  href="/Index">Home</a>
+        <a class="active" href="/StartupSuccess">Startup Success</a>
+        <a href="/LoanApproval">Loan Approval</a>
+        <a href="/DefaultChances">Chances for Default</a>
+        <a href="/CustomerChurn">Customer Churn</a>
+    </div>
+
+    <div class="container1">
+        <img src="images/redSky3.png" alt="Snow" width="100%" height="500">
+        <div class="centered">
+            <h1 class="TheTitle">Startup Success <br> Rate Estimator</h1>
+        </div>
+    </div>
+    <section class="center">
+        <br>
+        <br>
+        <h2 class="hello1 title montserrat H-color">What It Does</h2>
+        <p class="hello2 montserrat">
+            Our financial AI machine learning tool utilizes advanced algorithms to analyze a myriad of data points, including market trends, team composition, financial health, and industry benchmarks, to calculate the success rate of startups. By leveraging predictive modeling, our tool provides invaluable insights to investors, entrepreneurs, and stakeholders, empowering them to make informed decisions and mitigate risks in the volatile world of startups
+        </p>
+
+    </section>
+    <br>
+    <br>
+    <h2 class="hello1 title montserrat H-color">Calculate Your Startup Success Rate</h2>
+    <p class="hello2 montserrat">Fill the details of your startup to predict the chances of the startup's success</p>
+
+    <div class="container">
+        <form method = "post">
+            <br />
+            <div class="row">
+                <div class="col-25">
+                    <label>Year of Founding</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" name="yearFounding" placeholder="Founding Year">
+                </div>
+            </div>
+            
+          
+          
+            <div class="row">
+                <div class="col-25">
+                    <label>Number of Investors in Seed </label>
+                </div>
+                <div class="col-75">
+                    <input type="text" name="numInvestorsSeed" placeholder="Investors">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label>Number of Co-founders </label>
+                </div>
+                <div class="col-75">
+                    <input type="text" name="numCo-founders" placeholder=" Co-founders">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label>Number of advisors </label>
+                </div>
+                <div class="col-75">
+                    <input type="text" name="numAdvisors" placeholder="Advisors">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label>Team Size </label>
+                </div>
+                <div class="col-75">
+                    <input type="text" name="teamSize" placeholder="Team Size">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label>Number of repeat investors </label>
+                </div>
+                <div class="col-75">
+                    <input type="text" name="numRepeatInvestors" placeholder="Repeat Investors">
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-25">
+                    <label>Average size of companies worked for in the past</label>
+                </div>
+                <div class="col-75">
+                    <select name="avgSizePast">
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                    </select>
+                </div>
+            </div>
+     
+       
+            <div class="row">
+                <div class="col-25">
+                    <label>Product or serivce company?</label>
+                </div>
+                <div class="col-75">
+                    <select name="pdctService">
+                        <option value="product">Product</option>
+                        <option value="service">Service</option>
+
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label>Focus on private or public data?</label>
+                </div>
+                <div class="col-75">
+                    <select name="privatePublic">
+                        <option value="private">Private</option>
+                        <option value="public">Public</option>
+
+                    </select>
+                </div>
+            </div>
+    
+            <div class="row">
+                <div class="col-25">
+                    <label>Focus on structured or unstructured data?</label>
+                </div>
+                <div class="col-75">
+                    <select name="structUnstruc">
+                        <option value="structured">Structured</option>
+                        <option value="unstructured">Unstructured</option>
+                        <option value="both">Both</option>
+
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label>Subscription based business Cloud or Platform based serive/product?</label>
+                </div>
+                <div class="col-75">
+                    <select name="cloudPlat">
+                        <option value="cloud">Cloud</option>
+                        <option value="platform">Platform</option>
+
+
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label>Local or global player?</label>
+                </div>
+                <div class="col-75">
+                    <select name="localGlob">
+                        <option value="local">Local</option>
+                        <option value="global">Global</option>
+
+
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label>Linear or Non-linear business model?</label>
+                </div>
+                <div class="col-75">
+                    <select name="linNonlin">
+                        <option value="linear">Linear</option>
+                        <option value="non-linear">Non-linear</option>
+
+
+                    </select>
+                </div>
+            </div>
+            
+  
+            <div class="row">
+                <div class="col-25">
+                    <label>Crowdfunding based business?</label>
+                </div>
+                <div class="col-75">
+                    <select name="crowdfunding">
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                    </select>
+                </div>
+            </div>
+ 
+      
+            <div class="row">
+                <div class="col-25">
+                    <label>Online or offline venture?</label>
+                </div>
+                <div class="col-75">
+                    <select name="onlineOffline">
+                        <option value="online">Online</option>
+                        <option value="offline">Offline</option>
+                        <option value="both">Both</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label>	Highest education	</label>
+                </div>
+                <div class="col-75">
+                    <select name="highEd">
+                        <option value="masters">Masters</option>
+                        <option value="bachelors">Bachelors</option>
+                        <option value="PhD">PhD</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label>	Experience in selling and building products	</label>
+                </div>
+                <div class="col-75">
+                    <select name="expSellBuild">
+                        <option value="low">Low</option>
+                        <option value="medium">Medium</option>
+                        <option value="high">High</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label>	Dificulty of Obtaining Work force	</label>
+                </div>
+                <div class="col-75">
+                    <select name="diffWokForce">
+                        <option value="low">Low</option>
+                        <option value="medium">Medium</option>
+                        <option value="high">High</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label>	Time to market service or product	</label>
+                </div>
+                <div class="col-75">
+                    <select name="timeMarket">
+                        <option value="low">Low</option>
+                        <option value="medium">Medium</option>
+                        <option value="high">High</option>
+                    </select>
+                </div>
+            </div>
+    
+            <div class="row">
+                <div class="col-25">
+                    <label>Number of Direct Competitors</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" name="directCompets" placeholder="Number of Competitors">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label>	Gartner hype cycle stage	</label>
+                </div>
+                <div class="col-75">
+                    <select name="GartnerState">
+                        <option value="australia">Trough</option>
+                        <option value="trigger">Trigger</option>
+                        <option value="slope">Slope</option>
+                        <option value="plateau">Plateau</option>
+                        <option value="peak">Peak</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label>Last round of funding received (in milionUSD)</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" name="lastRound" placeholder="Last Round">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label>Time to 1st investment (in months))</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" name="invest1" placeholder="Time">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label>Average time to investment (in months)</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" name="avgInvest" placeholder="Time">
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <input type="submit" value="Submit">
+            </div>
+
+        </form>
+    </div>
+    <h2 class="hello1 title montserrat H-color">@message</h2>
+
+
+
+</body>
+</html>

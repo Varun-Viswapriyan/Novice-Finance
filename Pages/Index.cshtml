@@ -1,0 +1,137 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+    var message = ViewData["hello"];
+}
+
+
+
+<!DOCTYPE html>
+<html style="font-size: 16px;" lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+
+    <title>Home</title>
+
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="navbar">
+        <a class="active" href="/Index">Home</a>
+        <a href="/StartupSuccess">Startup Success</a>
+        <a href="/LoanApproval">Loan Approval</a>
+        <a href="/DefaultChances">Chances for Default</a>
+        <a href="/CustomerChurn">Customer Churn</a>
+    </div>
+
+    <div class="container1">
+        <img src="images/homePage-image.jpg" alt="Snow" width="100%" height="500">
+        <div class="centered">
+            <h1 class="TheTitle">Novice Finance <br> <span class="special">Financial Empowerment Through AI</span></h1>
+        </div>
+    </div>
+    <section class="center">
+        <br>
+        <br>
+        <h2 class="hello1 title montserrat H-color">Our Mission</h2>
+        <p class="hello2 montserrat">
+            "Providing world-class AI-powered financial tools to enable prospective everyday citizens to make their financial and entrepreneurial aspirations a reality"
+        </p>
+
+    </section>
+
+    <div class="back-black">
+        <section class="specificStyle  SECTION">
+            <div class=" specificStyle  ">
+                <div class="layout1">
+                    <div class="twoRow">
+                        <div class=" blackBackground  " src="">
+                            <div class="container ">
+                                <h2 class="title hello3 montserrat H-color">Startup Success </h2>
+                                <p class="hello3">Any world-renoweed​ multinational corporation started as an experimental startup, with its own set of risks and liabilities. Thus, before fully investing into your startup, visit our cutting-edge success calculator to predict the chances your startup could become the next big MNC.</p>
+                                <a class="button" href="/StartupSuccess">Learn More</a>
+                            </div>
+                        </div>
+                        <div class="hello5 " data-image-width="5760" data-image-height="3840">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="specificStyle  SECTION">
+            <div class=" specificStyle  ">
+                <div class="layout1">
+                    <div class="twoRow">
+                        <div class=" blackBackground " src="">
+                            <div class="container ">
+                                <h2 class="title hello3  H-color montserrat">Loan Approval </h2>
+                                <p class="hello3">Whether it's to fund your next entrepreneurial venture or for personal obligations, obtaining loans are a signifcant part of any individual's financial life. With our approval predicator, you can now decipher and analyze the factors determining the approval status of any loan.  </p>
+                                <a class="button" href="/LoanApproval">Learn More</a>
+                            </div>
+                        </div>
+                        <div class="hello5-2 " data-image-width="5760" data-image-height="3840">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="specificStyle  SECTION">
+            <div class=" specificStyle  ">
+                <div class="layout1">
+                    <div class="twoRow">
+                        <div class=" blackBackground  " src="">
+                            <div class="container ">
+                                <h2 class=" title hello3 montserrat H-color">
+                                    Chances for Default
+                                </h2>
+                                <p class="hello3">Getting a financial default of any sort creates immense stress and tension for the parties involved. With our default chances calculator, you can now predict the chances of any financial default, allowing you to plan ahead of time and face any financial hassle with the proper resources.</p>
+                                <a class="button" href="/DefaultChances">Learn More</a>
+                            </div>
+                        </div>
+                        <div class="hello5-3 " data-image-width="5760" data-image-height="3840">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="specificStyle  SECTION">
+            <div class=" specificStyle  ">
+                <div class="layout1">
+                    <div class="twoRow">
+                        <div class=" blackBackground  " src="">
+                            <div class="container ">
+                                <h2 class="title hello3 montserrat H-color">Customer Churn </h2>
+                                <p class="hello3">
+                                    ​No matter how great your entrepreneurial idea is, there will always be customers and clients who will exit your business for seemingly indiscernible reasons. Thanks to our customer churn predictor, you can now calculate the chances of any individual leaving your enterprise,
+                                    allowing you to take the proper precautionary measures.
+                                </p>
+                                <a class="button" href="/CustomerChurn">Learn More</a>
+                            </div>
+                        </div>
+                        <div class="hello5-4 " data-image-width="5760" data-image-height="3840">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+    </div>
+
+
+
+
+
+</body>
+</html>

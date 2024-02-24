@@ -1,0 +1,156 @@
+﻿@page
+
+@model WebApplication4.Pages.CustomerChurnModel
+@{
+   
+        var message = ViewData["topic"];
+  
+
+}
+    
+
+
+
+
+}
+<!DOCTYPE html>
+<html style="font-size: 16px;" lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+
+    <title>Customer Churn</title>
+
+
+
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="navbar">
+        <a  href="/Index">Home</a>
+        <a href="/StartupSuccess">Startup Success</a>
+        <a href="/LoanApproval">Loan Approval</a>
+        <a href="/DefaultChances">Chances for Default</a>
+        <a class="active" href="/CustomerChurn">Customer Churn</a>
+    </div>
+    <div class="container1">
+        <img src="images/redSky12.jpg" alt="Snow" width="100%" height="500">
+        <div class="centered">
+            <h1 class="TheTitle">Customer Churn <br> Rate Forecaster</h1>
+        </div>
+    </div>
+    <section class="center">
+        <br>
+        <br>
+        <h2 class="hello1 title montserrat H-color">What It Does</h2>
+        <p class="hello2 montserrat">
+            Our financial AI machine learning tool specializes in predicting customer churn rates for businesses. By analyzing customer behavior, transaction history, feedback, and other relevant data, our tool forecasts the likelihood of customers leaving. This helps businesses proactively identify at-risk customers and implement retention strategies, ultimately reducing churn and maximizing customer satisfaction and loyalty.
+        </p>
+
+    </section>
+    <br>
+    <br>
+    <h2 class="hello1 title montserrat H-color">Calculate The Churn</h2>
+    <p class="hello2 montserrat">Fill the details of the suspected customer to predict the chances of the customer's exit</p>
+
+    <div id="myDIV">
+        <div class="container">
+            <form method = "post">
+             
+                    <br />
+                <div class="row">
+                    <div class="col-25">
+                        <label>Credit Score</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" name="creditScore" placeholder="Credit Score">
+                    </div>
+                </div>
+              
+                <div class="row">
+                    <div class="col-25">
+                        <label>	Gender	</label>
+                    </div>
+                    <div class="col-75">
+                        <select name="gender">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label>Age</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" name="age" placeholder="Age">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label>Tenure with business (in years)</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" name="tenure" placeholder="Tenure">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label>Number of products/services bought from business</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" name="numPurchases" placeholder="Number of purchases">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label>	Has credit card?	</label>
+                    </div>
+                    <div class="col-75">
+                        <select name="creditCard">
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label>	Is an active client?	</label>
+                    </div>
+                    <div class="col-75">
+                        <select name="active">
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label>What is the estimated salary?</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" name="salary" placeholder="Estimated Salary">
+                    </div>
+                </div>
+
+
+                <br>
+                <div class="row">
+                    <input type="submit" name = "FormSubmitted" value="submit">
+                </div>
+            
+            </form>
+        </div>
+
+        <div name="finalClassification"><
+            <h2 class="hello1 title montserrat H-color"> @message</h2>
+            </div>
+    </div>
+
+
+
+
+</body>
+</html>

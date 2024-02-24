@@ -1,0 +1,150 @@
+﻿@page
+@model WebApplication4.Pages.LoanApprovalModel
+@{
+    ViewData["Title"] = "Loan Approval";
+    var message = ViewData["message"];
+}
+<!DOCTYPE html>
+<html style="font-size: 16px;" lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+
+    <title>Loan Approval</title>
+
+
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="navbar">
+        <a  href="/Index">Home</a>
+        <a href="/StartupSuccess">Startup Success</a>
+        <a class="active" href="/LoanApproval">Loan Approval</a>
+        <a href="/DefaultChances">Chances for Default</a>
+        <a href="/CustomerChurn">Customer Churn</a>
+    </div>
+    <div class="container1">
+        <img src="images/redSky4.png" alt="Snow" width="100%" height="500">
+        <div class="centered">
+            <h1 class="TheTitle">Loan Approval<br> Rate Calculator</h1>
+        </div>
+    </div>
+    <section class="center">
+        <br>
+        <br>
+        <h2 class="hello1 title montserrat H-color">What It Does</h2>
+        <p class="hello2 montserrat">
+            Our financial AI machine learning tool is designed to assess loan applications efficiently and accurately. By analyzing various factors such as credit history, income, debt-to-income ratio, and other relevant data, our tool calculates the likelihood of loan approval. This empowers lenders to make faster and more informed decisions while minimizing risks, streamlining the loan approval process for both borrowers and lenders.
+        </p>
+
+    </section>
+    <br>
+    <br>
+    <h2 class="hello1 title montserrat H-color">Calculate Your Loan Approval Chances</h2>
+    <p class="hello2 montserrat">Fill the details of your finances to predict the chances of your loan's approval</p>
+    <div class="container">
+        <form method = "post">
+            <br />
+            <div class="row">
+                <div class="col-25">
+                    <label>	Gender	</label>
+                </div>
+                <div class="col-75">
+                    <select class="gender">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </div>
+            </div>
+
+          
+            <div class="row">
+                <div class="col-25">
+                    <label>Number of dependents</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" name="dependents" placeholder="Number">
+                </div>
+            </div>
+          
+
+            <div class="row">
+                <div class="col-25">
+                    <label>	Education	</label>
+                </div>
+                <div class="col-75">
+                    <select class="education">
+                        <option value="grad">Graduate</option>
+                        <option value="notGrad">Not Graduate</option>
+                    </select>
+                </div>
+            </div>
+         
+          
+           
+            <div class="row">
+                <div class="col-25">
+                    <label>	Property Area/Location	</label>
+                </div>
+                <div class="col-75">
+                    <select class="propArea">
+                        <option value="urban">Urban</option>
+                        <option value="rural">Rural</option>
+                        <option value="semiurban">Semiurban</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label>Loan Amount</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" name="loanAmnt" placeholder= "Loan Amount" >
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label>Loan Amount Term (in days) </label>
+                </div>
+                <div class="col-75">
+                    <input type="text" name="loanTerm" placeholder ="Loan Term"/>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label>Applicant Income</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" name="applicantIncome" placeholder="Income">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label>Coapplicant income (zero if not applicable)</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" name="coApplicantIncome" placeholder="Income">
+                </div>
+            </div>
+            
+
+           
+          
+      
+
+
+            <br>
+            <div class="row">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+
+    <h2 class="hello1 title montserrat H-color">@message</h2>
+
+
+</body>
+</html>

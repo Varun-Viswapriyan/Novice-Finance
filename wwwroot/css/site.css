@@ -1,0 +1,434 @@
+.container1 {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+html {
+    font-family: montserrat;
+}
+/* Bottom left text */
+.bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+
+}
+
+
+/* Top left text */
+.top-left {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+}
+
+/* Top right text */
+.top-right {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+}
+body
+{
+    margin-top: -50px;
+
+
+}
+
+/* Bottom right text */
+.bottom-right {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+}
+
+/* Centered text */
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* Style the navigation menu */
+.navbar {
+    width: 100%;
+    background-color: #555;
+    overflow: auto;
+    border: 5px solid black;
+    margin-top: -20px;
+}
+
+.centerTop {
+    text-align: center;
+    font-size: 58;
+    font-family: montserrat;
+}
+/* Navigation links */
+.navbar a {
+    float: left;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    width: 20%; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+    text-align: center; /* If you want the text to be centered */
+    font-family: montserrat;
+}
+
+.H-color {
+    color: #e28743;
+}
+
+p {
+    font-family: montserrat
+}
+
+/* Add a background color on mouse-over */
+.navbar a:hover {
+    background-color: #000;
+}
+
+/* Style the current/active link */
+.navbar a.active {
+    background-color: #e28743;
+}
+
+/* Add responsiveness - on screens less than 500px, make the navigation links appear on top of each other, instead of next to each other */
+@media screen and (max-width: 500px) {
+    .navbar a {
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: left; /* If you want the text to be left-aligned on small screens */
+    }
+}
+
+.twoRow,
+.twoRow > * {
+    display: flex;
+}
+
+.specificStyle
+:after,
+.specificStyle
+:before {
+    content: '';
+    display: table;
+}
+
+.specificStyle
+:after {
+    clear: both;
+}
+
+.SECTION {
+    min-height: 494px;
+    min-height: 384px;
+    margin-top: 40px;
+    margin-bottom: 13px;
+    color: #000000 !important;
+    background-color: #000000 !important;
+}
+
+.back-black {
+    background-color: black;
+}
+
+.container {
+    position: relative;
+    flex: 1;
+    max-width: 100%;
+    transition-duration: inherit;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.montserrat {
+    font-family: 'Montserrat';
+}
+
+.styles {
+    background-color: #e28743; /* Green */
+    border: none;
+    color: #e28743;
+    padding: 15px 32px;
+    border: 2px solid black;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.button {
+    background-color: #e28743; /* Green */
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 15px 32px;
+    border: 2px solid black;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.blackGround-layout {
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-height: -webkit-fit-content;
+    min-height: fit-content;
+    max-width: 100%;
+    flex: 1 1 auto;
+}
+
+.blackBackground {
+    background-color: #ebeed7 !important;
+    flex: 0 0 50%;
+    max-width: 50%;
+    min-width: 50%;
+    border-right: 5px solid black;
+    border-left: 5px solid black;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-height: -webkit-fit-content;
+    min-height: fit-content;
+    max-width: 100%;
+}
+
+.black {
+    border-width: 0;
+    margin-right: 0.8em;
+    margin-left: 0.8em;
+}
+
+.hello1 {
+    text-align: center;
+}
+
+.layoutRow {
+    flex: 1 1 auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-height: -webkit-fit-content;
+    min-height: fit-content;
+    max-width: 100%;
+}
+
+.hello2 {
+    font-size: 1.25rem;
+    width: 780px;
+    font-weight: 400;
+    margin: 20px auto 60px;
+}
+
+.hello3 {
+    text-align: center;
+}
+
+.title {
+    font-size: 36px;
+}
+
+.homeTitle {
+    font-size: 58;
+    text-align: center;
+}
+
+.u-clearfix:after,
+.u-clearfix:before {
+    content: '';
+    display: table;
+}
+
+.u-clearfix:after {
+    clear: both;
+}
+
+.center {
+    text-align: center;
+    border: 5px solid black;
+    margin-bottom: -40px;
+    margin-top: -4px;
+    background-color: #ebeed7;
+}
+
+.topImage {
+    display: block;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    font-family: Montserrat, sans-serif;
+    background-position: 10% 10%;
+    font-size: 40px;
+}
+
+.addImageTop {
+    background-image: url("images/e72d8ab2d43628c9d281bc8d6c54be978ae23ff4271794f51ee7c25cd6ae2cf1c40c343ae46524d3040024b8a1cb77544b90c3f59b3d8537282d33_1280.jpg");
+    background-repeat: no-repeat;
+    font-size: 58px;
+    background-size: cover;
+}
+
+.special {
+    color: black;
+    font-size: 40px;
+}
+
+.TheTitle {
+    color: black;
+    font-family: montserrat;
+    font-size: 58px;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.layout1 {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+.layoutRow {
+    flex: 1 1 auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-height: -webkit-fit-content;
+    min-height: fit-content;
+    max-width: 100%;
+}
+
+.hello5 {
+    flex: 0 0 50%;
+    max-width: 50%;
+    min-width: 50%;
+    min-height: 384px;
+    background-image: url("../images/54098283-0.jpeg");
+    background-position: 50% 50%;
+    border-left: 0 !important;
+    border-right: 0 !important;
+}
+
+.hello5-2 {
+    flex: 0 0 50%;
+    max-width: 50%;
+    min-width: 50%;
+    min-height: 384px;
+    background-image: url("../images/54098283-01.jpeg");
+    background-position: 50% 50%;
+    border-left: 0 !important;
+    border-right: 0 !important;
+}
+
+.hello5-3 {
+    flex: 0 0 50%;
+    max-width: 50%;
+    min-width: 50%;
+    min-height: 384px;
+    background-image: url("../images/defaultimage-better.jpg"); 
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-left: 0 !important;
+    border-right: 0 !important;
+}
+
+.hello5-4 {
+    flex: 0 0 50%;
+    max-width: 50%;
+    min-width: 50%;
+    min-height: 384px;
+    background-image: url("../images/chrunimage.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-left: 0 !important;
+    border-right: 0 !important;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+/*track*/
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+/*thumb*/
+::-webkit-scrollbar-thumb {
+    background: transparent;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+form
+{
+    border: 3px solid black;
+}
+
+input[type=submit] {
+    background-color: #e28743;
+    color: black;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+    input[type=submit]:hover {
+        background-color: #45a049;
+    }
+
+.container {
+    border-radius: 5px;
+    background-color: #ebeed7;
+    padding: 20px;
+}
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}

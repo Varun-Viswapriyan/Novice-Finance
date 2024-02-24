@@ -1,0 +1,287 @@
+﻿@page
+@model WebApplication4.Pages.DefaultChancesModel
+@{
+    ViewData["Title"] = "Default Chances";
+
+    var message = ViewData["message"];
+
+}
+@functions
+{
+    
+}
+<!DOCTYPE html>
+<html style="font-size: 16px;" lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+
+    <title>Default Chances</title>
+
+
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="/Index">Home</a>
+        <a href="/StartupSuccess">Startup Success</a>
+        <a href="/LoanApproval">Loan Approval</a>
+        <a  class="active" href="/DefaultChances">Chances for Default</a>
+        <a href="/CustomerChurn">Customer Churn</a>
+    </div>
+
+
+    <div class="container1">
+        <img src="images/redSky2.png" alt="Snow" width="100%" height="500">
+        <div class="centered">
+            <h1 class="TheTitle">Default Chance <br>Predictor</h1>
+        </div>
+    </div>
+    <section class="center">
+        <br>
+        <br>
+        <h2 class="hello1 title montserrat H-color">What It Does</h2>
+        <p class="hello2 montserrat">
+            Our financial AI machine learning tool is dedicated to assessing credit default risks. By analyzing a variety of factors such as credit history, payment behavior, income stability, and economic indicators, our tool predicts the likelihood of individuals or businesses defaulting on loans. This enables lenders to make more informed decisions, manage risks effectively, and maintain a healthy loan portfolio.
+        </p>
+    </section>
+    <br>
+    <br>
+    <h2 class="hello1 title montserrat H-color">Calculate The Chances For Default</h2>
+    <p class="hello2 montserrat">Fill the details of your finances to predict the chances of a financial default</p>
+
+    <div class="container">
+        <form method = "post">
+            <br />
+          
+            <div class="row">
+                <div class="col-25">
+                    <label>What is the credit limit balance></label>
+                </div>
+                <div class="col-75">
+                    <input type="text" name="limitBalance" placeholder="Limit Balance">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label>	What is the gender?	</label>
+                </div>
+                <div class="col-75">
+                        <select name="gender">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label>	Highest education level	</label>
+                </div>
+                <div class="col-75">
+                        <select name="education">
+                        <option value="highSchool">High School</option>
+                        <option value="ug">University</option>
+                        <option value="grad">Graduate School</option>
+                        <option value="otther">Other</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label>	Marital Status	</label>
+                </div>
+                <div class="col-75">
+                    <select class="marriage">
+                        <option value="married">Married</option>
+                        <option value="single">Single </option>
+                        <option value="other">Other </option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label>Age?</label>
+                </div>
+                <div class="col-75">
+                        <input type="text" name="age" placeholder="Age">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label>Amount of previous payment due six months prior</label>
+                </div>
+                <div class="col-75">
+                        <input type="text" name="payment6" placeholder="Previous Payment">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label>Repayment status six months prior. (-1=pay duly, 1=payment delay for one month, 2=payment delay for two months, … 8=payment delay for eight months, 9=payment delay for nine months and above)</label>
+                </div>
+                <div class="col-75">
+                        <input type="text" name="status6" placeholder="Repayment status">
+                </div>
+            </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label>Amount of bill statement six months prior</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" name="bill6" placeholder="Repayment status">
+                    </div>
+                </div>
+
+
+
+            <div class="row">
+                <div class="col-25">
+                    <label>Amount of previous payment due five months prior</label>
+                </div>
+                <div class="col-75">
+                        <input type="text" name="payment5" placeholder="Previous Payment">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label>Repayment status five months prior</label>
+                </div>
+                <div class="col-75">
+                        <input type="text" name="status5" placeholder="Repayment status">
+                </div>
+            </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label>Amount of bill statement five months prior</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" name="bill5" placeholder="Repayment status">
+                    </div>
+                </div>
+
+
+
+            <div class="row">
+                <div class="col-25">
+                    <label>Amount of previous payment due four months prior</label>
+                </div>
+                <div class="col-75">
+                        <input type="text" name="payment4" placeholder="Previous Payment">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label>Repayment status four months prior</label>
+                </div>
+                <div class="col-75">
+                        <input type="text" name="status4" placeholder="Repayment status">
+                </div>
+            </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label>Amount of bill statement four months prior</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" name="bill4" placeholder="Repayment status">
+                    </div>
+                </div>
+
+
+
+            <div class="row">
+                <div class="col-25">
+                    <label>Amount of previous payment due three months prior</label>
+                </div>
+                <div class="col-75">
+                        <input type="text" name="payment3" placeholder="Previous Payment">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label>Repayment status three months prior</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" name="status3" placeholder="Repayment status">
+                </div>
+            </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label>Amount of bill statement three months prior</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" name="bill3" placeholder="Repayment status">
+                    </div>
+                </div>
+
+
+
+
+            <div class="row">
+                <div class="col-25">
+                    <label>Amount of previous payment due two months prior</label>
+                </div>
+                <div class="col-75">
+                        <input type="text" name="payment2" placeholder="Previous Payment">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label>Repayment status two months prior</label>
+                </div>
+                <div class="col-75">
+                        <input type="text" name="status2" placeholder="Repayment status">
+                </div>
+            </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label>Amount of bill statement two months prior</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" name="bill2" placeholder="Repayment status">
+                    </div>
+                </div>
+
+
+
+
+            <div class="row">
+                <div class="col-25">
+                    <label>Amount of previous payment due last month</label>
+                </div>
+                <div class="col-75">
+                        <input type="text" name="payment1" placeholder="Previous Payment">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label>Repayment status last month</label>
+                </div>
+                <div class="col-75">
+                        <input type="text" name="status1" placeholder="Repayment status">
+                </div>
+            </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label>Amount of bill statement last month</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" name="bill1" placeholder="Repayment status">
+                    </div>
+                </div>
+
+
+            <br>
+            <div class="row">
+                    <input type="submit" value="Submit">
+            </div>
+           
+        </form>
+
+       
+    </div>
+    <h2 class="hello1 title montserrat H-color">@message</h2>
+
+</body>
+</html>
